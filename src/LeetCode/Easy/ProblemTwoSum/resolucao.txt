@@ -1,0 +1,48 @@
+-target = 9, nums = [2, 7, 11, 15]
+
+map não contém 2
+- Adicionamos no map:
+  - Diferença: 9 - 2 = 7
+  - Índice: 0 (posição do número 2 no array)
+- O map agora fica: {7: 0}
+
+map contém 7
+- O número que precisamos para somar ao número atual (7) já foi armazenado no map (no índice 0 do array)
+- A chave 7 no map tem o valor 0, que é o índice do número 2 (o complemento de 7)
+- Isso significa que os números nums[0] = 2 e nums[1] = 7 somam o target (9)
+
+Retorno
+- O código retorna um novo array com os índices dos dois números que somam o target:
+- O número 0 que está contido na chave 7
+- O número 1, que é o índice atual
+- Assim, retornando o array com os elementos [0, 1]
+
+=========================================================================================================
+
+-target = 6, nums = [3, 2, 4]
+
+map não contém 3
+- Adicionamos no map:
+  - Diferença: 6 - 3 = 3
+  - Índice: 0 (posição do número 3 no array)
+- O map agora fica: {3: 0}
+
+
+map não contém 2
+- Adicionamos no map:
+  - Diferença: 6 - 2 = 4
+  - Índice: 1 (posição do número 2 no array)
+- O map agora fica: {3: 0, 4: 1}
+
+
+map contém 4
+- O número que precisamos para somar ao número atual (4) já foi armazenado no map (no índice 1 do array)
+- A chave 4 no map tem o valor 1, que é o índice do número 2 (o complemento de 4)
+- Isso significa que os números nums[1] = 2 e nums[2] = 4 somam o target (6)
+
+
+Retorno
+- O código retorna um novo array com os índices dos dois números que somam o target:
+- O número 1 que está contido na chave 4
+- O número 2, que é o índice atual
+- Assim, retornando o array com os elementos [1, 2]
