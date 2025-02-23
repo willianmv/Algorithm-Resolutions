@@ -1,0 +1,17 @@
+1 - Número transformado em String;
+2 - Inicialização de duas varáveis para serem utilizadas como ponteiros;
+3 - Criação de um loop que vai percorrer pela String tanto pelo começo com o left quanto pelo fim, com o right;
+4 - A cada iteração verificamos o char da primeira posição com a última, segundo com penúltima, e assim por diante;
+5 - Caso em algum momento eles forem diferentes, já é retornado false;
+6 - É verificado se cada char é igual até que os ponteiros "se encontrem" e confirme o palindromo
+
+========================================================================================================================
+
+Exemplo 1221:
+- Transformando em string temos os chars nas respectivas posições (1 posição(0) - 2 posição(1) - 2 posição(2) - 1 posição(3))
+- Left se inicia em 0, representando o começo
+- Right se inicia no tamanho na String - 1 (1221 tem tamanho 4, os elementos vão de 0 a 3, por isso o tamanho - 1)
+- Na primeira ocorrência verificamos se left (posição 0) é igual a right (posição 3)
+- Na segunda ocorrência verificamos se left (posição 1) é igual a right (posição 2)
+- Em seguida, chegamos no momento emm que left será maior que right, ou seja, passamos por todos os chars
+- Com isso sabemos que o elemento é palindromo
